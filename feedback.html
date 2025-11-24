@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathwaytoEducationinMalaysiaFeedback</title>
+    <link href="feedback.css" rel="stylesheet" type="text/css" />
+</head>
+<body> 
+<!-- Banner -->
+<ul>
+<div class="banner">
+  <img src="trendy-education-concepts-vector-1.jpg" class="bannerimage">
+  <h1>Pathway to Education in Malaysia</h1>
+</div>
+  
+<!-- Navigation Bar -->
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="edupath.html">Education path in Malaysia</a></li>
+  <li><a href="importance.html">Importance</a></li>
+  <li><a href="challenges.html">Challenges</a></li>
+  <li><a href="feedback.html" class="active">Feedback</a></li>
+</ul>
+
+<!-- Content Container -->
+<div class="container">
+        <h2>Feedback</h2>
+        <form onsubmit="showThanks(); return false;">
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">Please enter your opinion:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Please enter your opinion"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        function showThanks() {
+            const box = document.getElementById('message');
+            box.value = "";  
+            box.placeholder = "Thanks for your feedback!";
+        }
+    </script>
+</body>
+</html>
